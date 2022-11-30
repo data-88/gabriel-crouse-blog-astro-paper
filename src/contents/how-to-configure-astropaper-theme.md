@@ -1,143 +1,68 @@
 ---
-author: Sat Naing
+author: Gabriel Crouse
 datetime: 2022-09-23T04:58:53Z
-title: How to configure AstroPaper theme
-slug: how-to-configure-astropaper-theme
+title: Minimum wage in an era of joblessness
+slug: wage
 featured: true
 draft: false
 tags:
-  - configuration
+  - jobs
   - docs
 ogImage: ""
-description: How you can make AstroPaper theme absolutely yours.
+description: The empirical evidence shows a minimum wage does work — but it’s critical at what level this is set
 ---
 
-AstroPaper is a highly customizable Astro blog theme. With AstroPaper, you can customize everything according to your personal taste. This article will explain how you can make some customizations easily in the config file.
+Every opinion poll commissioned by the Institute of Race Relations (IRR) indicates that unemployment is the No 1 problem in SA.
 
-## Table of contents
+With social distancing, the unemployment line could reach from Cape Town to St Petersburg. But on an IRR estimate, it could reach as far as the North Pole soon, if urgent change isn’t made.
 
-## Configuring SITE
+In 2019, we warned that 1.7-million jobs would be lost in SA due to two factors. The first was research by Yale economist Jim Henry on jobs “at risk” of replacement; the second was our research into our new national minimum wage (NMW).
 
-First of all, replace site property of _`astro.config.mjs` file with your own deployed domain. (You can omit this step if you don't have deployed domain yet or you are still in development mode)_
+Some libertarians argue that a minimum wage increases unemployment, no matter what. They provide no evidence for this, which isn’t helpful. 
 
-Another important configurations lies in `src/config.ts` file. Within that file, you'll see the `SITE` object where you can specify your website's main configurations.
+Nor is it accurate. To solve the biggest problem in the country, one must check the facts. And surprising evidence has come in which supports the idea of a minimum wage. 
 
-```js
-// file: src/config.ts
-export const SITE = {
-  website: "https://astro-paper.pages.dev/",
-  author: "Sat Naing",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
-  ogImage: "default-og.png",
-  lightAndDarkMode: true,
-  postPerPage: 3,
-};
-```
+Nobel laureate Paul Krugman was firmly against a minimum wage until he saw studies which argued in favour of it, the first from fellow Princeton professor Alan Krueger.
 
-Here are SITE configuration options
+David Card, another Nobel laureate trained at Princeton, went the furthest in countering libertarian (and socialist) presumptions about the minimum wage with empirical inquiry, all of which is readily available. 
 
-| Options            | Description                                                                                                                                            |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `website`          | Your deployed website url                                                                                                                              |
-| `author`           | Your name                                                                                                                                              |
-| `desc`             | Your site description. Useful for SEO and social media sharing.                                                                                        |
-| `title`            | Your site name                                                                                                                                         |
-| `ogImage`          | Your default OG image for the site. Useful for social media sharing. OG image can be updated under `/public` directory.                                |
-| `lightAndDarkMode` | Enable or disable `light & dark mode` for the website. If disabled, primary color scheme will be used. This option is enabled by default.              |
-| `postPerPage`      | You can specify how many posts will be displayed in each posts page. (eg: if you set SITE.postPerPage to 3, each page will only show 3 posts per page) |
+The fact is that the evidence does not support a totalitarian view for or against the minimum wage.
 
-## Configuring logo or title
+Rather, it recommends a goldilocks compromise between an NMW and a median wage (MW), the level at which half of all workers earn more and half earn less.
 
-You can specify site's title or logo image in `src/config.ts` file.
+The ideal NMW-MW ratio is up for debate, but the clear warning is that there is a “too hot” option.
 
-![An arrow pointing at the website logo](https://res.cloudinary.com/noezectz/v1663911318/astro-paper/AstroPaper-logo-config_goff5l.png)
+In the US, the debate is about whether to raise the NMW from about 25% of the median to 50%. Krugman thinks this is low enough generally, but also argues that the economy of a poor region such as Puerto Rico “is hurt by sharing the US minimum wage”, because the NMW-MW ratio there is already 70%.
 
-```js
-// file: src/config.ts
-export const LOGO_IMAGE = {
-  enable: false,
-  svg: true,
-  width: 216,
-  height: 46,
-};
-```
+The US Congressional Budget Office, a government statistics body, estimates 1.3-million people will lose their jobs if the US NMW-MW ratio is doubled to 50%, and that 1.3-million other workers will climb out of poverty. So this highlights what’s at stake. 
 
-If you specify `LOGO_IMAGE.enable` => `false`, AstroPaper will automatically convert `SITE.title` to the main site text logo.
+The pandemic, lockdown and sudden contraction in economic growth accelerated mass job-shedding from years to months
+In SA, our NMW-MW ratio has been about 100% since 2019, which is practically a world record. The NMW is now R23.19 and the MW is R24.06 per hour, meaning the NMW-MW ratio is 96%.
 
-If you specify `LOGO_IMAGE.enable` => `true`, AstroPaper will use the logo image as the site's main logo.
+That puts half the workforce in peril.
 
-You have to specify `logo.png` or `logo.svg` under `/public/assets` directory. Currently, only svg and png image file formats are supported. (**_Important!_** _logo name has to be logo.png or logo.svg)_
+When we warned in 2019 that 1.7-million jobs would be lost due to this dumbfounding NMW-MW ratio, we were incorrect on one front: time.
 
-If your logo image is png file format, you have to set `LOGO_IMAGE.svg` => `false`.
+We always expected the stagnant economy to slow the process of replacing labour with machines, but the pandemic, lockdown and sudden contraction in economic growth accelerated mass job-shedding from years to months.
 
-It is recommended that you specify width and height of your logo image. You can do that by setting `LOGO_IMAGE.width` _and_ `LOGO_IMAGE.height`
+Since Covid, some peer countries have regained their job losses. But in SA, we remain 1.5-million jobs behind, and the proportion of youth not in employment, education or training continued to rise in the past quarter.
 
-## Configuring social links
+ Given the world-record NMW-MW unemployment ratio, this horror is no surprise.
 
-You can configure your own social links along with its icons.
+Youth bearing the brunt
 
-![An arrow pointing at social link icons](https://res.cloudinary.com/noezectz/v1663914759/astro-paper/astro-paper-socials_tkcjgq.png)
+Unfortunately, SA’s youth are suffering under the kind of policy you would expect from a warm-hearted billionaire who does nice-sounding but ineffective things. Red tape is garrotting our young jobseekers.
 
-Currently 19 social icons are supported. (Github, LinkedIn, Facebook etc.)
+The IRR calculates that 56% of South Africans aged 24 to 34 are not in employment, education or training.
 
-You can specify and enable certain social links in hero section and footer. To do this, go to `/src/config.ts` and then you'll find `SOCIALS` array of object.
+But if labour minister Thulas Nxesi gets his big wish — implementation of the Employment Equity Amendment Bill — we can expect the expanded definition of unemployment (including those who have stopped looking for jobs) to climb towards 56% for everyone. 
 
-```js
-// file: src/config.ts
-export const SOCIALS: SocialObjects = [
-  {
-    name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: ` ${SITE.title} on Github`,
-    active: true,
-  },
-  {
-    name: "Facebook",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Facebook`,
-    active: true,
-  },
-  {
-    name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Instagram`,
-    active: true,
-  },
-  ...
-]
-```
+That bill sounds pro-poor, but it’s actually the opposite. It grants Nxesi the power to set race quotas across the private sector, which can be enforced by pre-qualification for tenders and multimillion-rand fines.  
 
-You have to set specific social link to `active: true` in order to appear your social links in hero and footer section. Then, you also have to specify your social link in `href` property.
+Unless much of this is rethought, Nxesi may as well celebrate June 16 by announcing: “Happy Youth Day — most of you will never get a job!”
 
-For instance, if I want to make my Github appear, I'll make it like this.
+The point is, it doesn’t have to be this way: 1.9-million jobs were added between 2003 and 2008, so we know what it takes to do that again.
 
-```js
-export const SOCIALS: SocialObjects = [
-  {
-    name: "Github",
-    href: "https://github.com/satnaing", // update account link
-    linkTitle: `${SITE.title} on Github`, // this text will appear on hover and VoiceOver
-    active: true, // makre sure to set active to true
-  }
-  ...
-]
-```
+The way we see it, the first solution is to drop the minimum wage to the government rate of R12.75 per hour.
 
-Another thing to note is that you can specify the `linkTitle` in the object. This text will display when hovering on the social icon link. Besides, this will improve accessibility and SEO. AstroPaper provides default link title values; but you can replace them with your own texts.
-
-For example,
-
-```js
-linkTitle: `${SITE.title} on Twitter`,
-```
-
-to
-
-```js
-linkTitle: `Follow ${SITE.title} on Twitter`;
-```
-
-## Conclusion
-
-This is the brief specification of how you can customize this theme. You can customize more if you know some coding. For customizing styles, please read [this article](https://astro-paper.pages.dev/posts/customizing-astropaper-theme-color-schemes/). Thanks for reading.✌🏻
+After that, there is more that could be done. In a 2020 IRR survey, 80% of black respondents said they would benefit more from scrapping BEE and implementing a voucher system for various things, including education. That would work too.

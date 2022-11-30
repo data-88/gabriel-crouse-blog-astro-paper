@@ -1,7 +1,7 @@
 ---
-author: Sat Naing
-datetime: 2022-09-23T15:22:00Z
-title: Adding new posts in AstroPaper theme
+author: Gabriel Crouse
+datetime: 2022-05-23T15:22:00Z
+title: Mask mandates and health department's confusing messaging
 slug: adding-new-posts-in-astropaper-theme
 featured: true
 draft: false
@@ -9,95 +9,60 @@ tags:
   - docs
 ogImage: ""
 description:
-  Some rules & recommendations for creating or adding new posts using AstroPaper
-  theme.
+  What on earth is going on with the Department of Health [DoH]?" asked 702 radio host Bongani Bingwa earlier this month. This question emanated from an interview Bingwa did with DoH deputy Director General, Nicholas Crisp, and is worth repeating.
 ---
 
-Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
+"What on earth is going on with the Department of Health [DoH]?" asked 702 radio host Bongani Bingwa earlier this month. This question emanated from an interview Bingwa did with DoH deputy Director General, Nicholas Crisp, and is worth repeating. 
 
-## Table of contents
+For context, the indoor mask mandate, outdoor vaccine pass, and 50% venue capacity limitations (formerly among the lockdown Level 1 measures) lapsed under the Disaster Management Act. The DoH regulations were rushed through under the National Health Act at the last minute on 4 May to keep them in force. Dr Crisp was trying to explain and justify this.
 
-## Frontmatter
+That is a difficult sell even before you consider that Namibia, Kenya and this non-exhaustive list of 28 non-African countries ended mask mandates for indoor businesses and places of worship.
 
-Frontmatter is the main place to store some important information about the post (article). Frontmatter lies at the top of the article and is written in YAML format. Read more about frontmatter and its usage in [astro documentation](https://docs.astro.build/en/guides/markdown-content/).
+Punting indefinite mask mandates becomes even trickier if you read this peer-reviewed statistical analysis of 35 European countries in the second Covid-19 wave. It found "that countries with high levels of mask compliance did not perform better than those with low mask usage". Moreover, "the moderate positive correlation between mask usage and deaths in Western Europe also suggests that the universal use of masks may have had harmful unintended consequences".
 
-Here is the list of frontmatter property for each post.
+Dr Crisp's task becomes harder still when one remembers this News24 report on a finding in March that Covid-19 had become less deadly than the flu in the UK. Professor Shabir Madhi told News24 that "we've made similar sorts of estimates for South Africa". 
 
-| Property          | Description                                                                               | Remark                    |
-| ----------------- | ----------------------------------------------------------------------------------------- | ------------------------- |
-| **_title_**       | Title of the post. (h1)                                                                   | required<sup>\*</sup>     |
-| **_description_** | Description of the post. Used in post excerpt and site description of the post.           | default = SITE.desc       |
-| **_author_**      | Author of the post.                                                                       | default = SITE.author     |
-| **_datetime_**    | Published datetime in ISO 8601 format.                                                    |                           |
-| **_slug_**        | Slug for the post. Usually the all lowercase title seperated in `-` instead of whtiespace | default = slugified title |
-| **_featured_**    | Whether or not display this post in featured section of home page                         | default = false           |
-| **_draft_**       | Mark this post 'unpublished'.                                                             | default = false           |
-| **_tags_**        | Related keywords for this post. Written in array yaml format.                             |                           |
-| **_ogImage_**     | OG image of the post. Useful for social media sharing and SEO.                            | default = SITE.ogImage    |
+None of that is to deny that, at least politically, preaching permanent lockdown will sometimes reach the ears of the converted. "Some Britons crave permanent lockdown" ran an Economist headline which must have a South African analogue. The UK survey showed that 30% of Britons wanted permanent social distancing while 40% wanted mask mandates in shops "permanently, regardless of Covid-19". 
 
-`title` and `slug` fields in frontmatter must be specified.
+People like that, here or anywhere, need no evidence that masks stop Covid-19. When six local experts wrote that during Omicron, "the type of cloth mask most worn by the public…does not meaningfully reduce transmission" some must have grumbled "who cares? Everyone must mask regardless of Covid-19!"
 
-Title is the title of the post and it is very important for search engine optimization (SEO).
+Clear communication needed 
 
-`slug` is the unique identifier of the url. Thus, `slug` must be unique and different from other posts. The whitespace of `slug` needs to be separated with `-` or `_` but `-` is recommended. If slug is not specified, the slugified title of the post will be used as slug.
+While people disagree about what the rules should be, at least we agree that the rules should be communicated clearly, which is one of Dr Crisp's duties.
 
-Here is the sample frontmatter for the post.
+But Crisp told Bingwa that schools are not counted as "gatherings", so they are exempted from mask mandates but must stick to social distancing. However, exempting schools from the "gathering" clause means they are exempt from social distancing limits, not the mask mandate.
 
-```yaml
-# src/contents/sample-post.md
----
-title: The title of the post
-author: your name
-datetime: 2022-09-21T05:17:19Z
-slug: the-title-of-the-post
-featured: true
-draft: false
-tags:
-  - some
-  - example
-  - tags
-ogImage: ""
-description: This is the example description of the example post.
----
-```
+Someone called Bingwa's radio programme to correct Crisp's mistake, assisting the public by simply reading the two-page regulations. If only Dr Crisp had bothered to put in the same effort.
 
-## Adding table of contents
+To his credit, Crisp apologised in a later interview with Sally Burdett on eNCA, but then made matters worse. Burdett was asking him tough questions on forced masking, to which he replied that "right now what we are asking the public is to take responsibility for yourselves. We've given the guidance, we've given the regulation, it's not an offence if you don't comply with it, but it is the regulation."
 
-By default, a post (article) does not include any table of contents (toc). To include toc, you have to specify it in a specific way.
+That is absurd. The Constitution classifies regulations as "instruments of subordinate legislation" that have the full force of law, not suggestions for voluntary consideration. But apparently, the Deputy DG has not read that document either. 
 
-Write `Table of contents` in h2 format (## in markdown) and place it where you want it to be appeared on the post.
+Crisp then muddied the medical waters too. Burdett observed that "with the notable exception of China", many countries "have accepted that this virus is going to circulate in society, and many are taking a very pragmatic approach: vaccinate the older population, protect the vulnerable, and get on with life. Britain's doing that. Why aren't we?"
 
-For instance, if you want to place your table of contents just under the intro paragraph (like I usually do), you can do that in the following way.
+High immunity 
 
-```md
----
-# some frontmatter
----
+Crisp answered by saying that Britain's vaccination rate is "double" South Africa's, as if we should blindly copycat Britain by relaxing the lockdown according to their vaccination timetable.
 
-Here are some recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
+"But we have high immunity" from previous infections, Burdett smartly answered, "and we know that the T Cells will protect us for years. That's what we are being told by the scientists".
 
-## Table of contents
+"Well," Crisp mused, "I would ask the scientists to provide you with the evidence of the T Cell immunity, because what they reported is that there are antibodies circulating."
 
-<!-- the rest of the post -->
-```
+Indeed, the seroprevalence study, which showed that 80% of Gauteng residents over 50 had already had Covid-19 before Omicron, tested for antibodies, not T cells. But complaining about this is like complaining that the 2022 census counts heads without surgically confirming that there are brains inside each skull.
 
-## Headings
+Covid-19 specific antibodies imply Covid-19 specific T cells are present too, and here is one piece of scientific evidence to back that from a Nature meta-analysis titled "The T cell immune response against SARS-CoV-2":
 
-There's one thing to note about headings. The AstroPaper blog posts use title (title in the frontmatter) as the main heading of the post. Therefore, the rest of the heading in the post should be using h2 \~ h6.
+A wide range of studies have shown that the T cell response is a critical component of immune protection against SARS-CoV-2. This should come as no surprise. Cellular immunity [T and B cells] is essential for the protection of multicellular organisms, and coronaviruses have co-existed with Homo Sapiens over long periods of time. Evidence now suggests that SARS-CoV-2-specific T cell responses are essential for viral clearance, may prevent infection without seroconversion [antibodies], provide robust memory, and mediate recognition of viral variants.
+We always need more research, but the "no surprise" background fact is that if you recovered, you thank your T cells for playing a role. Here are more studies to read on the robustness of your T cells regarding Covid-19.
 
-This rule is not mandatory, but highly recommended for visual, accessibility and SEO purposes.
+They add up to explaining why Madhi was right to say "we've made similar sorts of estimates for South Africa" to the UK, where Covid-19 is deadly but less deadly than flu. Most people have recovered from Covid-19, the costly way of getting a T cell response.
 
-## Bonus
+Professor Madhi looks back on South Africa's acquisition of mass immune-boosting as one of policy failure. "All of these regulations have done very little to protect people from being infected," said Madhi, adding that "had those masks been doing such a great job we wouldn't have had 9 out of 10 South Africans being infected with the virus at least once".
 
-### Image compression
+By contrast, Crisp looks back on the last two years and sees a great success. He defended masks on Burdett's show by rhetorically suggesting that "when we were wearing masks so religiously" this prevented mass Covid-19 transmission. 
 
-When you put images in the blog post, it is recommended that the image is compressed. This will affect the overall performance of the website.
+This suggests that Crisp does not just doubt that 80% of Gautengers with antibodies before Omicron also had Covid-19 specific T cells; he doubts that they had had Covid-19 at all. There is no scientific basis to doubt that 9 in 10 South Africans have been infected with the virus at least once – but there is a political one.
 
-My recommendation for image compression sites.
+- Gabriel Crouse is an analyst, and head of campaigns, at the Institute of Race Relations.
 
-- [TinyPng](https://tinypng.com/)
-- [TinyJPG](https://tinyjpg.com/)
-
-### OG Image
-
-The default OG image will be placed if a post does not specify the OG image. Though not required, OG image related to the post should be specify in the frontmatter. The recommended size for OG image is **_1200 X 640_** px.
+https://www.news24.com/news24/columnists/guestcolumn/opinion-gabriel-crouse-mask-mandates-and-health-departments-confusing-messaging-20220517
