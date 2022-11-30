@@ -1,10 +1,10 @@
 import type { SocialObjects } from "./types";
 
 export const SITE = {
-  website: "https://astro-paper.pages.dev/",
-  author: "Sat Naing",
+  website: "https://crouse.netlify.app/",
+  author: "Gabriel Crouse",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  title: "Gabriel Crouse",
   ogImage: "default-og.png",
   lightAndDarkMode: true,
   postPerPage: 3,
